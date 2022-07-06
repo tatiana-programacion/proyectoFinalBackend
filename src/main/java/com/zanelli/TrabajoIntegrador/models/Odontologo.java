@@ -18,7 +18,7 @@ public class Odontologo {
     private String apellido;
     private int matricula;
 
-    private Set<Turno> getTurnos;
+    private Set<Turno> turnos;
 
 
 }

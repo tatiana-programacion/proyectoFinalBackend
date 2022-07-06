@@ -22,6 +22,6 @@ public class Paciente {
     private int dni;
     private LocalDate fechaAlta;
 
-    private Set<Turno> getTurnos;
+    private Set<Turno> turnos;
 
 }
