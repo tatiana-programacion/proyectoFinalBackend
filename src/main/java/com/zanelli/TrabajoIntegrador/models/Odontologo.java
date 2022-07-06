@@ -1,11 +1,14 @@
 package com.zanelli.TrabajoIntegrador.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import java.util.*;
+import javax.persistence.*;
 
-//@Entity
-//@Table(name="Odontologo")
+
+@Entity
+@Table(name="Odontologos")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -13,11 +16,15 @@ import java.util.*;
 @ToString
 public class Odontologo {
 
+    @Id
+    @GeneratedValue
     private Long id;
     private String nombre;
     private String apellido;
     private int matricula;
 
+    @OneToMany(mappedBy = "odontologo")
+    @JsonIgnore
     private Set<Turno> turnos;
 
 

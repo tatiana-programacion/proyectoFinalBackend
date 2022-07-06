@@ -1,12 +1,13 @@
 package com.zanelli.TrabajoIntegrador.models;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import javax.persistence.*;
 import java.time.LocalDate;
 import java.util.Set;
 
-//@Entity
-//@Table(name="Odontologo")
+@Entity
+@Table(name="Pacientes")
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
@@ -15,6 +16,8 @@ import java.util.Set;
 
 public class Paciente {
 
+    @Id
+    @GeneratedValue
     private Long id;
     private String nombre;
     private String apellido;
@@ -22,6 +25,8 @@ public class Paciente {
     private int dni;
     private LocalDate fechaAlta;
 
+    @OneToMany(mappedBy = "paciente")
+    @JsonIgnore
     private Set<Turno> turnos;
 
 }
