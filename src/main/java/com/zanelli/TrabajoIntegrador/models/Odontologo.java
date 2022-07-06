@@ -17,11 +17,12 @@ import javax.persistence.*;
 public class Odontologo {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private Long id;
     private String nombre;
     private String apellido;
     private int matricula;
+
 
     @OneToMany(mappedBy = "odontologo")
     @JsonIgnore

@@ -1,5 +1,4 @@
 package com.zanelli.TrabajoIntegrador.models;
-
 import lombok.*;
 
 @AllArgsConstructor
@@ -7,7 +6,6 @@ import lombok.*;
 @Getter
 @Setter
 @ToString
-
 public class OdontologoDTO {
     private Long id;
     private String nombre;

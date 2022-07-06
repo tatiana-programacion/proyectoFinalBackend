@@ -3,6 +3,7 @@ package com.zanelli.TrabajoIntegrador.models;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 import javax.persistence.*;
+
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -17,7 +18,7 @@ import java.util.Set;
 public class Paciente {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy =  GenerationType.IDENTITY)
     private Long id;
     private String nombre;
     private String apellido;
