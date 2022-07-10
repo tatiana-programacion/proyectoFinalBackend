@@ -1,1 +1,13 @@
 [2022-07-07 18:17:44] [ ERROR] [GlobalExceptionHandler:19] Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "h"
+[2022-07-07 19:20:17] [ ERROR] [GlobalExceptionHandler:19] Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"
+[2022-07-07 19:20:27] [ ERROR] [GlobalExceptionHandler:19] Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"
+[2022-07-07 19:20:50] [ ERROR] [GlobalExceptionHandler:19] Failed to convert value of type 'java.lang.String' to required type 'java.lang.Long'; nested exception is java.lang.NumberFormatException: For input string: "list"
+[2022-07-10 15:47:31] [ ERROR] [GlobalExceptionHandler:19] Request method 'PUT' not supported
+[2022-07-10 15:48:09] [ ERROR] [GlobalExceptionHandler:19] Request method 'PUT' not supported
+[2022-07-10 15:48:15] [ ERROR] [GlobalExceptionHandler:19] JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name
+ at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 5, column: 2]
+[2022-07-10 15:55:06] [ ERROR] [GlobalExceptionHandler:19] Content type 'text/plain;charset=UTF-8' not supported
+[2022-07-10 15:55:18] [ ERROR] [GlobalExceptionHandler:19] Content type 'text/plain;charset=UTF-8' not supported
+[2022-07-10 15:55:50] [ ERROR] [GlobalExceptionHandler:19] Content type 'text/plain;charset=UTF-8' not supported
+[2022-07-10 15:56:34] [ ERROR] [GlobalExceptionHandler:19] Content type 'text/plain;charset=UTF-8' not supported
+[2022-07-10 15:56:48] [ ERROR] [GlobalExceptionHandler:19] Content type 'text/plain;charset=UTF-8' not supported
