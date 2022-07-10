@@ -4,8 +4,9 @@ window.addEventListener('load', function () {
     formulario.addEventListener('submit', function (event) {
         event.preventDefault();
         const formData = {
-            name: document.querySelector('#nombre').value,
-            lastname: document.querySelector('#apellido').value,
+            nombre: document.querySelector('#nombre').value,
+            apellido: document.querySelector('#apellido').value,
+            matricula: document.querySelector('#matricula').value,
 
         };
 
@@ -43,6 +44,7 @@ window.addEventListener('load', function () {
     function resetUploadForm(){
         document.querySelector('#nombre').value = "";
         document.querySelector('#apellido').value = "";
+        document.querySelector('#matricula').value = "";
 
     }
 

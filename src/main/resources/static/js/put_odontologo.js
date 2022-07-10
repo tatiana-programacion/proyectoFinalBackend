@@ -4,8 +4,9 @@ window.addEventListener('load', function () {
         let odontologoId = document.querySelector('#odontologo_id').value;
         const formData = {
             id: document.querySelector('#odontologo_id').value,
-            name: document.querySelector('#nombre').value,
-            lastname: document.querySelector('#apellido').value,
+            nombre: document.querySelector('#nombre').value,
+            apellido: document.querySelector('#apellido').value,
+            matricula: document.querySelector('#matricula').value,
 
         };
         const url = '/odontologos';
@@ -23,19 +24,20 @@ window.addEventListener('load', function () {
  })
 
     function findBy(id) {
-          const url = '/odontologos'+"/"+id;
+          const url = '/odontologos'+ "/" + id;
           const settings = {
               method: 'GET'
           }
           fetch(url,settings)
           .then(response => response.json())
           .then(data => {
-              let student = data;
-              document.querySelector('#odontologo_id').value = student.id;
-              document.querySelector('#nombre').value = student.name;
-              document.querySelector('#apellido').value = student.lastname;
+              let odontologo = data;
+              document.querySelector('#odontologo_id').value = odontologo.id;
+              document.querySelector('#nombre').value = odontologo.name;
+              document.querySelector('#apellido').value = odontologo.lastname;
+              document.querySelector('#matricula').value = odontologo.matricula;
 
-              document.querySelector('#div_student_updating').style.display = "block";
+              document.querySelector('#div_odontologo_updating').style.display = "block";
           }).catch(error => {
               alert("Error: " + error);
           })
