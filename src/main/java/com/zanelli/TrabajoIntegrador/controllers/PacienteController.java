@@ -1,6 +1,6 @@
 package com.zanelli.TrabajoIntegrador.controllers;
 
-import com.zanelli.TrabajoIntegrador.models.OdontologoDTO;
+
 import com.zanelli.TrabajoIntegrador.models.PacienteDTO;
 import com.zanelli.TrabajoIntegrador.services.IPacienteService;
 import org.springframework.beans.factory.annotation.Autowired;

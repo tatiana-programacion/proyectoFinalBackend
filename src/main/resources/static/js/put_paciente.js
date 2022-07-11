@@ -31,7 +31,7 @@ window.addEventListener('load', function () {
           fetch(url,settings)
           .then(response => response.json())
           .then(data => {
-              let odontologo = data;
+              let paciente = data;
               document.querySelector('#paciente_id').value = paciente.id;
               document.querySelector('#nombre').value = paciente.nombre;
               document.querySelector('#apellido').value = paciente.apellido;

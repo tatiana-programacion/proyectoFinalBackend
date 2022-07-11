@@ -14,3 +14,10 @@
 [2022-07-10 18:42:57] [ ERROR] [GlobalExceptionHandler:19] Request method 'PUT' not supported
 [2022-07-10 19:56:35] [ ERROR] [GlobalExceptionHandler:19] could not execute statement; SQL [n/a]; constraint ["FK4OKCQR9IQT2IW6XHY1PPSMO3L: PUBLIC.TURNOS FOREIGN KEY(PACIENTE_ID) REFERENCES PUBLIC.PACIENTES(ID) (CAST(3 AS BIGINT))"; SQL statement:
 delete from pacientes where id=? [23503-214]]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-07-10 20:38:00] [ ERROR] [GlobalExceptionHandler:19] could not execute statement; SQL [n/a]; constraint [FKQTJ6T7MULC2JMFKV92X4CTKWH]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-07-10 20:38:02] [ ERROR] [GlobalExceptionHandler:19] could not execute statement; SQL [n/a]; constraint [FKQTJ6T7MULC2JMFKV92X4CTKWH]; nested exception is org.hibernate.exception.ConstraintViolationException: could not execute statement
+[2022-07-10 21:05:46] [ ERROR] [GlobalExceptionHandler:19] Request method 'PUT' not supported
+[2022-07-10 21:06:17] [ ERROR] [GlobalExceptionHandler:19] Request method 'PUT' not supported
+[2022-07-10 21:06:37] [ ERROR] [GlobalExceptionHandler:19] not-null property references a null or transient value : com.zanelli.TrabajoIntegrador.models.Turno.odontologo; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.zanelli.TrabajoIntegrador.models.Turno.odontologo
+[2022-07-10 21:11:34] [ ERROR] [GlobalExceptionHandler:19] not-null property references a null or transient value : com.zanelli.TrabajoIntegrador.models.Turno.odontologo; nested exception is org.hibernate.PropertyValueException: not-null property references a null or transient value : com.zanelli.TrabajoIntegrador.models.Turno.odontologo
+[2022-07-10 21:12:32] [ ERROR] [GlobalExceptionHandler:19] Unable to find com.zanelli.TrabajoIntegrador.models.Odontologo with id 3; nested exception is javax.persistence.EntityNotFoundException: Unable to find com.zanelli.TrabajoIntegrador.models.Odontologo with id 3
